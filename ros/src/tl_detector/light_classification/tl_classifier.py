@@ -36,11 +36,9 @@ class TLClassifier(object):
                 num_detections = self.detection_graph.get_tensor_by_name('num_detections:0')
 
                 image_np_expanded = np.expand_dims(image, axis=0)
-
                 (boxes, scores, classes, num) = sess.run([detection_boxes, detection_scores, detection_classes, 
 							num_detections], 
 							feed_dict={image_tensor: image_np_expanded})
-
                 boxes = np.squeeze(boxes)
                 scores = np.squeeze(scores)
                 classes = np.squeeze(classes).astype(np.int32)
