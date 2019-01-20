@@ -72,3 +72,8 @@ cd CarND-Capstone/ros
 roslaunch launch/site.launch
 ```
 5. Confirm that traffic light detection works on real life images
+
+
+### Reference
+* [Traffic light pre-trained model](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+* [Tranning details ref](https://github.com/satoshikumano/traffic-light-detection-fh) 
