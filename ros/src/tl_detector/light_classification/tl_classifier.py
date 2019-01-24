@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from styx_msgs.msg import TrafficLight
 import numpy as np
 import tensorflow as tf
